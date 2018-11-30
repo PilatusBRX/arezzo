@@ -1,0 +1,201 @@
+body#app{
+    background: linear-gradient(90deg,#D81B60,#ec407a);
+     background-attachment: fixed;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+body#app .navbar-laravel{
+    background: transparent;
+    color: #f2f2f2;
+    display: none;
+
+}
+
+body#app .navbar-laravel .nav-link{
+    color: #361E1A;
+}
+
+.card-title i{
+    font-size: 120px;
+    color: #D6EBFF;
+}
+
+.login-panel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 64px;
+}
+.login-panel h4{
+    color: #D6EBFF;
+}
+.login-panel .card{
+    background: transparent;
+}
+.login-panel input{
+        background: #c51162;
+        border: none;
+        color: #D6EBFF;
+}
+.login-panel input:focus,
+.login-panel input:hover{
+    background: #c51162;
+
+}
+.login-panel input[type="email"],
+.login-panel input[type="password"]{
+    color: #fff;
+}
+.login-panel span{
+    color: #fff;
+}
+
+.login-panel input,
+.btn-login{
+    border-radius:
+    25px;
+}
+.btn-register{
+    margin: auto;
+}
+
+.btn-login:hover{
+    background: #c51162;
+    color: #fff;
+}
+
+.btn-link{
+    color: #f2f2f2;
+}
+
+.form-check-input {
+
+    margin-top: 0.6rem;
+    margin-left: -1.25rem;
+}
+.checkbox-form{
+    margin-left: 24px;
+}
+
+@media(min-width: 960px){
+
+    .card-body {
+        width: 400px;
+        flex: 1 1 400px;
+        padding: 1.25rem;
+        margin: auto;
+    }
+
+    .form-check-label{
+        margin-left: 5px;
+    }
+
+    .btn-login{
+        width: 365px;
+        flex: 1 1 365px;
+        margin: auto;
+        background: #fff;
+        color: #c51162;
+        border: none;
+        transition: all ease 500ms;
+    }
+
+}
+
+@media(max-width: 959px){
+
+
+    .brand-logo{
+        top: 10px;
+        position: relative;
+    }
+
+    .btn-login{
+        width: 100%;
+        flex: 1 1 100%;
+        background: #c51162;
+        border: none;
+    }
+    .login-panel{
+        margin-top: -1px;
+    }
+
+    .login-panel h4{
+        font-size: 19px;
+        line-height: 32px;
+    }
+
+    .card-title i{
+        font-size: 64px;
+    }
+
+}
+
+
+
+.btn-add{
+    background: #e91e63;
+}
+.btn-add:hover{
+    background: #e91566;
+}
+a{
+    color: #e91e63;
+}
+footer{
+    text-align: center;
+    }
+
+.create{
+    margin-bottom: 240px;
+}
+
+.pagination .active a{
+    background: #e91e63;
+}
+.pagination .active a{
+    transition: all linear .5s;
+}
+.pagination a:hover{
+    background: #e91e63;
+    color: #fff;
+}
+.btn-add{
+    margin-bottom: 100px;
+}
+.btn-edit{
+    margin-bottom: 220px;
+}
+.btn-logout{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+}
+.btn-logout:hover{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+}
+.sidenav {
+    background: #e91566;
+}
+
+.sidenav .btn-logout{
+
+    background: #444;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+}
+.sidenav .btn-logout:hover{
+    background: #444;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Meus produtos</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+     <style>
+            .btn-add{
+                background: #e91e63;
+            }
+            .btn-add:hover{
+                background: #e91566;
+            }
+            a{
+                color: #e91e63;
+            }
+            footer{
+                text-align: center;
+            }
+            .pagination .active a, 
+            .pagination li a {
+                color: #444;
+                display: inline-block;
+                font-size: 1.2rem;
+                padding: 0 10px;
+                line-height: 30px;
+                border-radius: 100%;
+          }
+
+            .pagination .active a{
+                background: #e91e63;
+            }
+            .pagination .active a{
+                transition: all linear .5s;
+            }
+            .pagination a:hover{
+                background: #e91e63;
+                color: #fff;
+            }
+            .btn-add{
+                margin-bottom: 100px;
+            }
+            .btn-edit{
+                margin-bottom: 400px;
+            }
+            .sidenav .material-icons{
+                color: #fff;
+            }
+        </style>
+</head>
+<body>
+
+<nav class="pink darken-1">
+    <div class="container">
+            <div class="nav-wrapper">
+                    <a href="/" class="brand-logo"><i style="font-size:3rem;" class="material-icons medium">dashboard</i>Arezzo</a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="/"><i style="font-size:2.2rem;" class="material-icons medium">home</i></a></li>
+                        <li><a href="/"><i style="font-size:2.2rem;" class="material-icons medium">contact_mail</i></a></li>
+                        <li><a href=""><i style="font-size:2.2rem;" class="material-icons medium">input</i></a></li>
+                        <li style="margin-left: 10px;"><a href="/"><i style="font-size:2.5rem;" class="material-icons medium">person</i></a>
+                        <li style="margin-right: 10px;">Logado como Tio loko</li>
+                  </ul>
+            </div>
+        </nav>
+
+        <ul class="sidenav pink darken-5" id="mobile-demo">
+            <li><a href="/"><i style="font-size:2rem;" class="material-icons medium">home</i></a></li>
+            <li><a href="/"><i style="font-size:2rem;" class="material-icons medium">contact_mail</i></a></li>
+            <li><a href=""><i style="font-size:2rem;" class="material-icons medium">input</i></a></li>
+        </ul>
+
+    </div>
+    <br><br>
+    <div class="container">
+        <div class="row">
+            <h4>Editar Contato</h4>
+        </div>
+    </div>
+
+ <br><br>
+
+ <!--formulário-->
+<div class="container edit.section">
+    <div class="row">
+        <form class="col s12" method="POST" action="">
+                <div class="row">
+                    <div class="input-field col s3">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input id="icon_prefix" type="text" class="validate">
+                        <label for="icon_prefix">Nome</label>
+                    </div>
+                    <div class="input-field col s3">
+                        <i class="material-icons prefix">phone</i>
+                        <input id="icon_telephone1" type="tel" class="validate">
+                        <label for="icon_telephone1">Telefone</label>
+                    </div>
+
+
+                        <div class="input-field col s3">
+                            <i class="material-icons prefix">mail</i>
+                            <input id="icon_prefix2" type="text" class="validate">
+                            <label for="icon_prefix2">E-mail</label>
+                        </div>
+                        <div class="input-field col s3">
+                            <i class="material-icons prefix">supervisor_account</i>
+                            <input id="icon_telephone2" type="tel" class="validate">
+                            <label for="icon_telephone2">Empresa</label>
+                        </div>
+                    </div>
+                    <br><br>
+                     <button type="submit" class="waves-effect waves-light btn btn-add btn-edit"><i class="material-icons left">add</i>Atualizar Contato</button>
+             </form>
+
+
+        </div>
+</div>
+
+
+<!--footer-->
+<footer>
+    <nav class="pink darken-1">
+       <div class="container">
+               <a href="">&copy; 2018:: Todos os direitos reservados</a>
+       </div>
+   </nav>
+</footer>
+
+
+
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+ <!-- Compiled and minified JavaScript -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+ <script>
+    $(document).ready(function(){
+    $('.sidenav').sidenav();
+    });
+ </script>
+ <script>
+    $(document).ready(function(){
+    $('.tooltipped').tooltip();
+    });
+
+ </script>
+
+
+
+</body>
+</html>
